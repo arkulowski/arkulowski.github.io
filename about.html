@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About Page</title>
-    <link type="text/css" href="example.css" rel="stylesheet">
+    <title>About Andrew Kulowski</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -10,54 +9,92 @@
             margin: 0;
             padding: 0;
         }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        header {
             background-color: #333;
             color: #fff;
             padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
         .nav-option {
             color: #fff;
             text-decoration: none;
             margin-left: 20px;
         }
+
         .nav-option:hover {
             text-decoration: underline;
         }
-        .header {
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
             color: #333;
             font-size: 32px;
             margin-bottom: 10px;
         }
-        h2 {
+
+        p {
             color: #555;
             line-height: 1.5;
             margin-bottom: 10px;
         }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-            margin-top: 10px;
-            display: block;
+
+        section {
+            margin-bottom: 30px;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a class="nav-option" href="index.html">Home</a>
-        <a class="nav-option" href="about.html">About</a>
-    </div>
-    <h1 class="header">Projects</h1>
-    <p>The below linked project is an RPG game I worked on with a few other peers in SER225. <br>The objective of the game is to collect keys to enter a castle and progress through each level to eventually defeat the boss. In this game, you play as a squirrel seeking revenge for your girlfriend's death.</p>
-    <a href="https://github.com/AndrewLabbe/Squirrel_RPG" target="_blank">Click here to visit the Squirrel RPG GitHub repository</a>
-    <p> <br>The below link is a card game that I created myself, it simulates a standard blackjack game allowing you to bet money each turn.</p>
-    <a href="https://github.com/arkulowski/cardgame">Visit Card Game Repository on GitHub</a>
+    <header>
+        <nav class="navbar">
+            <a class="nav-option" href="index.html">Home</a>
+            <a class="nav-option" href="about.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Welcome to My Website, All About Andrew Kulowski</h1>
+            <p>I'm a computer science major currently attending Quinnipiac University, after graduating from Newington High School. My passion for coding was ignited by my brother, who introduced me to his own code, and I've been eager to learn more ever since.</p>
+            <p>As an intermediate coder, I'm constantly working on improving my skills in programming and software development.</p>
+            <p>Aside from coding, I enjoy activities such as weightlifting, reading, and golfing. Fun fact: I'm a Pisces.</p>
+            <p>Below are pictures of me and my two dogs</p>
+            <div class="image-container">
+                <img src="images/dogs.jpg" alt="Picture of me" />
+                <img src="images/me.jpg" alt="Picture of my dogs" />
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>This is the footer section</p>
+    </footer>
 </body>
 </html>
-
-    
