@@ -3,22 +3,71 @@ def generate_html_homepage():
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Andrew Kulowski - Personal Website</title>
+        <title>Andrew Kulowski's Personal Website</title>
         <style>
-            /* Your CSS styles go here */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+            }
+            nav {
+                background-color: #555;
+                color: #fff;
+                padding: 10px;
+            }
+            main {
+                padding: 20px;
+            }
+            section {
+                margin-bottom: 20px;
+            }
+            footer {
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+            }
+            h1 {
+                font-size: 36px;
+                margin: 0;
+            }
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+            a {
+                color: #007bff;
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
         <header>
-            <!-- Header content goes here -->
+            <h1>Welcome to Andrew Kulowski's Personal Website</h1>
+            <p>This website serves as information about me and my coding projects</p>
         </header>
         <nav>
-            <!-- Navigation menu goes here -->
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
         <main>
-            <section>
-                <!-- Main content goes here -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>The about section includes some background information about me as well as a picture of me and my two dogs.</p>
             </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <p> The Projects page contains a description of two projects, one I did alone and one I worked on with other teammates.</p>
+           
         </main>
         <footer>
             <p>&copy; 2023 Andrew Kulowski. All rights reserved.</p>
@@ -27,4 +76,3 @@ def generate_html_homepage():
     </html>
     '''
     return html
-
