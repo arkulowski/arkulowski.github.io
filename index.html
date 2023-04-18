@@ -1,100 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Andrew Kulowski - Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .navbar {
-        display: flex;
-        align-items: center;
-    }
-
-    .nav-option {
-        color: #fff;
-        text-decoration: none;
-        margin-left: 20px;
-    }
-
-    .nav-option:hover {
-        text-decoration: underline;
-    }
-
-    main {
-        padding: 20px;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    h1 {
-        color: #333;
-        font-size: 32px;
-        margin-bottom: 10px;
-    }
-
-    p {
-        color: #555;
-        line-height: 1.5;
-        margin-bottom: 10px;
-    }
-
-    section {
-        margin-bottom: 30px;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        margin-top: 10px;
-    }
-
-    footer {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-    }
-</style>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a class="nav-option" href="index.html">Home</a>
-            <a class="nav-option" href="about.html">About</a>
+def generate_html_homepage():
+    html = '''
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Andrew Kulowski - Personal Website</title>
+        <style>
+            /* Your CSS styles go here */
+        </style>
+    </head>
+    <body>
+        <header>
+            <!-- Header content goes here -->
+        </header>
+        <nav>
+            <!-- Navigation menu goes here -->
         </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Welcome to My Website, All About Andrew Kulowski</h1>
-            <p>I'm a computer science major currently attending Quinnipiac University, after graduating from Newington High School. My passion for coding was ignited by my brother, who introduced me to his own code, and I've been eager to learn more ever since.</p>
-            <p>As an intermediate coder, I'm constantly working on improving my skills in programming and software development.</p>
-            <p>Aside from coding, I enjoy activities such as weightlifting, reading, and golfing. Fun fact: I'm a Pisces.</p>
-            <p>Below is a picture of me and my two dogs</p>
-            <p>
-            <img src="dogs.jpg" alt="Picture of me" />
-            <img src="me.jpg" alt="Picture of my dogs" />
-            <img src="" alt=""/>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Andrew Kulowski. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-
-
-
+        <main>
+            <section>
+                <!-- Main content goes here -->
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Andrew Kulowski. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
+    '''
+    return html
 
